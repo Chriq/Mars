@@ -92,6 +92,7 @@ function makeControls(){
     button1.onclick = function () {
         window.location = 'dockExp.html';
     }
+    button2.onclick = questionOne;
 }
 
 function explainDock(){
@@ -115,4 +116,54 @@ function explainDock(){
 
     var text = document.getElementById("dockText");
     text.innerHTML = s;
+}
+
+function questionOne() {
+
+    var q1 = "Here's where the first question goes!";
+
+    var text = document.getElementById("text");
+    text.innerHTML = q1;
+
+    var inputBox = document.getElementById("input2");
+    var answer = 'answer';
+
+    document.getElementById("input2")
+        .addEventListener("keyup", function(event) {
+                event.preventDefault();
+                if (event.keyCode === 13 && input2.value === "answer") {
+                    text.innerHTML = "correct!";
+                    setTimeout(questionTwo, 3500);
+                }
+                else if (event.keyCode === 13 && input2.value !== "answer") {
+                    // game over somehow
+                }
+            }
+        )
+
+}
+
+function questionTwo() {
+
+    var q2 = "Here's where the second question goes!";
+
+    var text = document.getElementById("text");
+    text.innerHTML = q2;
+
+    var inputBox = document.getElementById("input2");
+    var answer = 'answer2';
+
+    document.getElementById("input2")
+        .addEventListener("keyup", function(event) {
+                event.preventDefault();
+                if (event.keyCode === 13 && input2.value === "answer2") {
+                    text.innerHTML = "correct again! nice!"
+                    // setTimeout(questionThree, 3500);
+                }
+                else if (event.keyCode === 13 && input2.value !== "answer2") {
+                    // game over somehow
+                }
+            }
+        )
+
 }
