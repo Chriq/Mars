@@ -43,9 +43,9 @@ function narrateLaunch(){
 
     var text = document.getElementById("text");
     text.innerHTML = s1;
-    setTimeout(function(){text.innerHTML = s2}, 6000);
-    setTimeout(function(){text.innerHTML = s3}, 12000);
-    setTimeout(function(){text.innerHTML = s4}, 18000);
+    setTimeout(function(){text.innerHTML = s2}, 3000);
+    setTimeout(function(){text.innerHTML = s3}, 6000);
+    setTimeout(function(){text.innerHTML = s4}, 9000);
 }
 
 function narrateDock(){
@@ -59,9 +59,9 @@ function narrateDock(){
 
     var text = document.getElementById("text");
     text.innerHTML = s1;
-    setTimeout(function(){text.innerHTML = s2}, 6000);
-    setTimeout(function(){text.innerHTML = s3}, 12000);
-    setTimeout(function(){text.innerHTML = s4}, 18000);
+    setTimeout(function(){text.innerHTML = s2}, 3000);
+    setTimeout(function(){text.innerHTML = s3}, 6000);
+    setTimeout(function(){text.innerHTML = s4}, 9000);
 }
 
 function dockISS(){
@@ -81,7 +81,7 @@ function dockISS(){
             }
         }
     },
-    20000);
+    3000);
 }
 
 function makeControls(){
@@ -285,11 +285,11 @@ function narrateLanding(){
 
     var text = document.getElementById("text");
 
-    var s1 = "Congratulations, Commander! You've arrived at Mars! All that's left is the landing. " +
-        "Input your desired angle of entry into the telemetry input bar so that you may enter the Martian " +
-        "atmosphere.";
+    var s1 = "Congratulations, Commander! You've arrived at Mars! All that's left is the landing. ";
     var s2 = "Be careful not to be too steep or shallow. You're Entering the atmosphere at thousands " +
-        "of miles an hour, so if you're too steep, you'll burn up, but if you're too shallow, you skip right off.";
+        "of miles an hour, so if you're too steep, you'll burn up, but if you're too shallow, you skip right off. " +
+    "Input your desired angle of entry into the telemetry input bar so that you may enter the Martian " +
+    "atmosphere.";
 
     text.innerHTML = s0;
     setTimeout(function(){text.innerHTML = s1}, 3000);
