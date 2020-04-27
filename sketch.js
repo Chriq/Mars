@@ -5,6 +5,7 @@ function toLaunch(URL) {
 function playMusic(id) {
 
     var myMusic= document.getElementById(id);
+    myMusic.volume = 0.2;
     myMusic.play();
 
 }
