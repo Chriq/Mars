@@ -43,9 +43,9 @@ function narrateLaunch(){
 
     var text = document.getElementById("text");
     text.innerHTML = s1;
-    setTimeout(function(){text.innerHTML = s2}, 3000);
-    setTimeout(function(){text.innerHTML = s3}, 6000);
-    setTimeout(function(){text.innerHTML = s4}, 9000);
+    setTimeout(function(){text.innerHTML = s2}, 2400);
+    setTimeout(function(){text.innerHTML = s3}, 4800);
+    setTimeout(function(){text.innerHTML = s4}, 7200);
 }
 
 function narrateDock(){
@@ -59,9 +59,9 @@ function narrateDock(){
 
     var text = document.getElementById("text");
     text.innerHTML = s1;
-    setTimeout(function(){text.innerHTML = s2}, 3000);
-    setTimeout(function(){text.innerHTML = s3}, 6000);
-    setTimeout(function(){text.innerHTML = s4}, 9000);
+    setTimeout(function(){text.innerHTML = s2}, 2400);
+    setTimeout(function(){text.innerHTML = s3}, 4800);
+    setTimeout(function(){text.innerHTML = s4}, 7200);
 }
 
 function dockISS(){
@@ -81,7 +81,7 @@ function dockISS(){
             }
         }
     },
-    3000);
+    8000);
 }
 
 function makeControls(){
@@ -115,7 +115,7 @@ function hohmann() {
 
     var text = document.getElementById("text");
     text.innerHTML = q0;
-    setTimeout(function(){text.innerHTML = q1}, 4000);
+    setTimeout(function(){text.innerHTML = q1}, 2000);
 
     var inputho = document.getElementById("input2");
 
@@ -146,12 +146,12 @@ function tcm() {
     + "a turn. ";
     var q3 = "We'll need to use rotational dynamics in order to find our engine's necessary force to turn. Using " +
     "Newton's second law, if the moment of inertia about the roll axis is 5 and the angular acceleration is 10, find "
-    + "The resulting force.";
+    + "the resulting force.";
 
     var text = document.getElementById("text");
     text.innerHTML = q1;
-    setTimeout(function(){text.innerHTML = q3}, 4000);
-    setTimeout(function(){text.innerHTML = q3}, 10000);
+    setTimeout(function(){text.innerHTML = q2}, 2400);
+    setTimeout(function(){text.innerHTML = q3}, 4800);
 
     var inputtcm = document.getElementById("input4");
 
@@ -184,10 +184,10 @@ function narrateEmergency(){
     var text = document.getElementById("text");
 
     text.innerHTML = s0;
-    setTimeout(function(){text.innerHTML = s1}, 6000);
-    setTimeout(function () {text.innerHTML = s2}, 12000);
+    setTimeout(function(){text.innerHTML = s1}, 2400);
+    setTimeout(function () {text.innerHTML = s2}, 4800);
 
-    setTimeout(function(){makeEmergencyControls()}, 6000);
+    setTimeout(function(){makeEmergencyControls()}, 4800);
 }
 
 function makeEmergencyControls(){
@@ -286,14 +286,14 @@ function narrateLanding(){
     var text = document.getElementById("text");
 
     var s1 = "Congratulations, Commander! You've arrived at Mars! All that's left is the landing. ";
-    var s2 = "Be careful not to be too steep or shallow. You're Entering the atmosphere at thousands " +
+    var s2 = "You're Entering the atmosphere at thousands " +
         "of miles an hour, so if you're too steep, you'll burn up, but if you're too shallow, you skip right off. " +
-    "Input your desired angle of entry into the telemetry input bar so that you may enter the Martian " +
+    "Input your desired angle of entry into the telemetry input bar to enter the Martian " +
     "atmosphere.";
 
     text.innerHTML = s0;
     setTimeout(function(){text.innerHTML = s1}, 3000);
-    setTimeout(function () {text.innerHTML = s2}, 9000);
+    setTimeout(function () {text.innerHTML = s2}, 5000);
     makeLandingControls();
 }
 
