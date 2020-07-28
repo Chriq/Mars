@@ -81,7 +81,7 @@ a:visited{
     width: 200px;
     height: 400px;
     position:absolute;
-    transform: translate(40vmax, 30vmin);
+    transform: translate(40vmax, 36vmin);
 
 }
 
@@ -102,8 +102,8 @@ a:visited{
 #view{
     color: yellow;
     position: absolute;
-    transform: translate(750px, 120px);
-    z-index: 10;
+    transform: translate(65vmax, 25vmin);
+    z-index: 1;
 }
 
 #viewObject{
@@ -131,7 +131,7 @@ a:visited{
     width: 100vw;
     height: 100vh;
     position: absolute;
-    z-index: 1;
+    z-index: 3;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -139,7 +139,7 @@ a:visited{
 #controls{
     position: absolute;
     width: max-content;
-    transform: translate(20vmax, 89vmin);
+    transform: translate(20vmax, 87vmin);
     z-index: 5;
 }
 
